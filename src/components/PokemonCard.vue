@@ -8,8 +8,8 @@
       <div class="card-body">
         <h5 class="card-title"> {{ name}}</h5>
           <p class="subtitle is-6">Tipo: {{ pokemon.type }}</p>
-          <p class="subtitle is-6">Altura: {{ pokemon.height / 10 }} m</p>
-          <p class="subtitle is-6">Peso: {{ pokemon.weight / 10 }} kg</p>
+          <p class="subtitle is-6">Altura: {{ pokemon.height / 10 }} M</p>
+          <p class="subtitle is-6">Peso: {{ pokemon.weight / 10 }} Kg</p>
       </div>
     </div>
   </div>
