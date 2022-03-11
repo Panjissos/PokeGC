@@ -20,7 +20,7 @@
                   <p class="subtitle is-6">Peso: {{ pokemon.weight / 10 }} Kg</p>
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
               </div>
               </div>
           </div>
@@ -28,14 +28,12 @@
       <a class="btn btn-dark" data-bs-toggle="modal" href="#exampleModalToggle" role="button">detalhes</a>
         </div>
       </div> 
-  </div>
-  
+  </div>  
 </div>
 
 </template>
 <script>
 import api from '../services/api';
-//import PokemonDetails from './PokemonDetails.vue';
 export default {
   name: 'PokemonCard',
   props: {
