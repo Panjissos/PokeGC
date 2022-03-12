@@ -4,29 +4,18 @@
       <div class="d-flex flex-wrap col-4">
         <img :src="currentImg" class="img-fluid rounded-start" alt="">
       </div>
-      <div class="d-flex flex-wrap col-8">
-        <div class="card-body">
-          <h5 class="card-title"> <p class="capitalized">{{ name}}</p></h5>
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <p class="subtitle is-6">Tipo: {{ pokemon.type }}</p>
-                  <p class="subtitle is-6">Altura: {{ pokemon.height / 10 }} M</p>
-                  <p class="subtitle is-6">Peso: {{ pokemon.weight / 10 }} Kg</p>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              </div>
-              </div>
+      <div class="d-flex flex-wrap col-8" id="">
+        <div class="card-body" id="">
+          <h5 class="card-title"> <p class="capitalized">{{ name }}</p></h5>
+          <div >
+            <pokemon-card-detail 
+              :type="pokemon.type"
+              :height="pokemon.height"
+              :weight="pokemon.weight"
+            />
           </div>
-      </div>
-      <a class="btn btn-dark" data-bs-toggle="modal" href="#exampleModalToggle" role="button">detalhes</a>
         </div>
+        
       </div> 
   </div>  
 </div>
@@ -34,9 +23,14 @@
 </template>
 <script>
 import api from '../services/api';
+import PokemonCardDetail from './PokemonCardDetail.vue'
 export default {
   name: 'PokemonCard',
+  components:{
+    PokemonCardDetail
+  },
   props: {
+    index: Number,
     name: String,
     url: String
   },
@@ -60,6 +54,7 @@ export default {
   },
 }
 </script>
+
 <style scoped>
   .capitalized {
 	text-transform: capitalize;

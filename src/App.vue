@@ -18,8 +18,8 @@
 <br>
 <div class="container">
     <div class="row">
-      <div class="col-12 col-md-3" v-for="(pokemon, index) in filteredPokemons" :key="pokemon.url" >
-        <pokemon-card :index="index + 1" :name="pokemon.name" :url="pokemon.url" />
+      <div class="col-12 col-md-3" v-for="(pokemon,) in filteredPokemons" :key="pokemon.url" >
+        <pokemon-card :name="pokemon.name" :url="pokemon.url" />
       </div>
     </div>
   </div>
