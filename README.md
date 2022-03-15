@@ -2,30 +2,30 @@
 
 :gear: Tecnologias
 
-<p> →VueJS</p>	
-<p> →Axios</p>
-<p> →Bootstrap</p>
-<br>
-
+- VueJS
+- Axios
+- Bootstrap
 
 ### Resultado
-```
+
 <a href="poke-gc-ro2nfdodv-panjissos.vercel.app">
-  <img src="https://github.com/Panjissos/PokeGC/issues/1#issue-1170084855" width="75%" />
+  <img src="https://user-images.githubusercontent.com/47435988/158453450-bb842b06-e2a5-4682-b12a-323dcb65c2cf.png" />
 </a>
-[Flex Grid](https://poke-gc-ro2nfdodv-panjissos.vercel.app/)
 
+### :file_folder: Requisitos
+- NPM ou Yarn
+- Vue
+
+### :hammer: Executando o Projeto
+
+```bash
+# Instação de dependências
+$ npm install
+
+# Executando projeto
+$ npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
