@@ -2,35 +2,26 @@
   <div class="card mb-3">
     <div class="row g-0">
       <div class="d-flex flex-wrap col-4">
-        <img :src="currentImg" class="img-fluid rounded-start" alt="">
+        <img :src="currentImg" class="img-fluid img-thumbnail" alt="">
       </div>
       <div class="d-flex flex-wrap col-8" id="">
         <div class="card-body" id="">
           <h5 class="card-title"> <p class="capitalized">{{ name }}</p></h5>
           <div >
-            <pokemon-card-detail 
-              :type="pokemon.type"
-              :height="pokemon.height"
-              :weight="pokemon.weight"
-            />
+            <p class="subtitle is-6">Tipo: {{ pokemon.type }}</p>
+            <p class="subtitle is-6">Altura: {{ pokemon.height / 10 }} M</p>
+            <p class="subtitle is-6">Peso: {{ pokemon.weight / 10 }} Kg</p>
           </div>
         </div>
-        
       </div> 
   </div>  
 </div>
-
 </template>
 <script>
 import api from '../services/api';
-import PokemonCardDetail from './PokemonCardDetail.vue'
 export default {
   name: 'PokemonCard',
-  components:{
-    PokemonCardDetail
-  },
   props: {
-    index: Number,
     name: String,
     url: String
   },
@@ -45,11 +36,7 @@ export default {
   data(){
     return {
       currentImg: '',
-      pokemon: {
-        type:'',
-        height:'',
-        weight: ''
-      }
+      pokemon: {}
     }
   },
 }
