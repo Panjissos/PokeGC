@@ -11,7 +11,7 @@
 ### Resultado
 ```
 <a href="https://pokedex-vuejs-kappa.vercel.app/">
-  <img src="https://user-images.githubusercontent.com/47435988/158453450-bb842b06-e2a5-4682-b12a-323dcb65c2cf.png" width="75%" />
+  <img src="https://github.com/Panjissos/PokeGC/issues/1#issue-1170084855" width="75%" />
 </a>
 
 ```
