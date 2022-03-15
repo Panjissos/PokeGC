@@ -25,6 +25,9 @@ $ npm install
 # Executando projeto
 $ npm run serve
 ```
+### :bellhop_bell: Ainda falta
+- Melhorar moldal
+##<p> Foi desenvolvida uma componente, mas ainda precisa de melhorias</p>
 
 
 
