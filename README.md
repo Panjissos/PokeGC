@@ -27,7 +27,7 @@ $ npm run serve
 ```
 ### :bellhop_bell: Ainda falta
 - Melhorar moldal
-##<p> Foi desenvolvida uma componente, mas ainda precisa de melhorias</p>
+  <p>→ Foi desenvolvida uma componente para modal, mas ainda precisa de melhorias</p>
 
 
 
