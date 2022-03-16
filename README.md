@@ -19,6 +19,13 @@
 ### :hammer: Executando o Projeto
 
 ```bash
+
+# clone o projeto
+git clone https://github.com/Panjissos/PokeGC.git
+
+# abra a pasta clonada
+cd pokegc
+
 # Instação de dependências
 $ npm install
 
